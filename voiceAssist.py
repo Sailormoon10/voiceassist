@@ -3,7 +3,7 @@ import os
 #gtts is a google text to speech library
 from gtts import *
 
-text= "Tomorrow you have a doctor's appointment at 10:30 AM. Appointment is with Dr. Marcus"
+text= input("Enter the text you would like to change to speech: ")
 language="en"
 voice = gTTS(text= text, lang = language, slow = False)
 voice.save("text2.mp3")
